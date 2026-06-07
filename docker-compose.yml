@@ -1,0 +1,45 @@
+services:
+  homepage:
+    image: ghcr.io/gethomepage/homepage:latest
+    container_name: homepage
+    ports:
+      - "3001:3000"
+    volumes:
+      - ./homepage:/app/config
+    environment:
+      HOMEPAGE_ALLOWED_HOSTS: localhost:3001,192.168.1.39:3001
+    restart: unless-stopped
+
+  uptime-kuma:
+    image: louislam/uptime-kuma:latest
+    container_name: uptime-kuma
+    ports:
+      - "3002:3001"
+    volumes:
+      - uptime-kuma:/app/data
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3003:3000"
+    volumes:
+      - grafana-storage:/var/lib/grafana
+    restart: unless-stopped
+
+  portainer:                            # ← fix: ย้ายเข้า services
+    image: portainer/portainer-ce:latest
+    container_name: portainer
+    ports:
+      - "9000:9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+    restart: unless-stopped
+
+volumes:                                # ← fix: merge เป็นอันเดียว
+  uptime-kuma:
+  grafana-storage:
+  portainer_data:
+

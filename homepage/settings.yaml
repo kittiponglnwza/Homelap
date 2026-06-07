@@ -1,0 +1,23 @@
+title: TopZ Dashboard
+
+background:
+  image: https://images.unsplash.com/photo-1484417894907-623942c8ee29?w=1920
+  blur: sm
+  brightness: 50
+  opacity: 50
+
+theme: dark
+color: slate
+
+headerStyle: clean
+
+layout:
+  AI & Coding:
+    style: row
+    columns: 4
+  University:
+    style: row
+    columns: 4
+  Monitoring:
+    style: row
+    columns: 4

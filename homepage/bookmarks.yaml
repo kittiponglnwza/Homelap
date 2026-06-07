@@ -1,0 +1,47 @@
+- AI & Coding:
+    # - ChatGPT:
+    #     - href: https://chatgpt.com
+    #       icon: chatgpt.png
+    #       description: AI Assistant
+
+    - GitHub:
+        - href: https://github.com/kittiponglnwza
+          icon: github.png
+          description: Code Repository
+
+    # - Claude:
+    #     - href: https://claude.ai
+    #       icon: claude-ai.png
+    #       description: Anthropic AI
+
+- University:
+    - KMUTNB:
+        - href: https://www.kmutnb.ac.th
+          icon: mdi-school
+          description: มจพ.
+
+    # - Google Classroom:
+    #     - href: https://classroom.google.com
+    #       icon: google-classroom.png
+    #       description: Online Learning
+
+- Monitoring:
+    - Netdata:
+        - href: http://192.168.1.39:19999
+          icon: netdata.png
+          description: System Metrics
+
+    - Uptime Kuma:
+        - href: http://192.168.1.39:3002
+          icon: uptime-kuma.png
+          description: Service Monitor
+
+    # - Grafana:
+    #     - href: http://192.168.1.39:3003
+    #       icon: grafana.png
+    #       description: Dashboards
+
+    - Portainer:
+        - href: http://192.168.1.39:9000
+          icon: portainer.png
+          description: Docker Manager

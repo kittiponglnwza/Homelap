@@ -1,0 +1,7 @@
+#page_wrapper {
+  backdrop-filter: blur(2px);
+}
+
+.bookmark-text {
+  font-weight: 500;
+}
